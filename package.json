@@ -1,7 +1,6 @@
 {
-  "name": "@madeval/component-vite",
-  "private": true,
-  "version": "1.0.0",
+  "name": "example-component-vite-madeval",
+  "version": "1.0.1",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -37,6 +36,7 @@
     "rollup": "^2.72.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.6.3",
     "vite": "^2.9.7",
