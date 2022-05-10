@@ -1,7 +1,7 @@
 {
-  "name": "component-vite",
+  "name": "@madeval/component-vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -12,7 +12,8 @@
     "build": "rollup -c",
     "test": "vitest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "prepublishOnly": "npm run build",
+    "storybook:export": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
