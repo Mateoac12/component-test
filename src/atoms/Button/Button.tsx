@@ -1,11 +1,12 @@
 import classNames from 'classnames'
 import { ButtonProps } from './Button.types'
 
-import './Button.module.css'
+import styles from './Button.module.css'
 
+console.log(styles['variant-primary'])
 const Button = ({ children, onClick, variant }: ButtonProps) => {
-    return <button onClick={onClick} className={classNames("button", {
-        [`variant-${variant}`]: variant
+    return <button onClick={onClick} className={classNames(styles.button, {
+        [`${styles[`variant-${`${variant}`}`]}`]: variant
     })}>{children}</button>
 }
 
