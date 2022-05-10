@@ -1,0 +1,17 @@
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.variant-primary {
+    background-color: #ccc;
+    color: #000,
+}
+
+.variant-secondary {
+    background-color: #000;
+    color: #fff,
+}
