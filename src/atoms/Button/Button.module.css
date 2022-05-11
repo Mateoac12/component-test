@@ -8,10 +8,15 @@
 
 .variant-primary {
     background-color: #ccc;
-    color: #000,
+    color: #000;
 }
 
 .variant-secondary {
-    background-color: #000;
-    color: #fff,
+    background-color: var(--color-brand-slate-blue);
+    color: #fff;
+}
+
+.variant-tertiary {
+    background-color: blue;
+    color: #fff;
 }

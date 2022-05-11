@@ -11,20 +11,20 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 export const Primary = Template.bind({})
 Primary.args = {
     variant: 'primary',
-    children: 'Button',
+    children: 'Primary',
     onClick: () => {}
 }
 
 export const Secondary = Template.bind({})
 Secondary.args = {
     variant: 'secondary',
-    children: 'Button',
+    children: 'Secondary',
     onClick: () => {}
 }
 
 export const Tertiary = Template.bind({})
 Tertiary.args = {
     variant: 'tertiary',
-    children: 'Button',
+    children: 'Tertiary',
     onClick: () => {}
 }

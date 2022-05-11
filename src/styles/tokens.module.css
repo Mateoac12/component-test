@@ -1,0 +1,9 @@
+:root body[data-color-schema="light"]{
+  --color-brand-slate-blue: #7559d1;
+  --background: #fafafa;
+}
+
+:root body[data-color-schema="dark"]{
+  --color-brand-slate-blue: tomato;
+  --background: #1c1c1c;
+}
