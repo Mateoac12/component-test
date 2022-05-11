@@ -4,7 +4,8 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
-// import styles from "rollup-plugin-styles";
+import filesize from 'rollup-plugin-filesize';
+import copy from 'rollup-plugin-copy';
 
 
 const packageJson = require("./package.json");
@@ -30,6 +31,20 @@ export default {
     typescript({ useTsconfigDeclarationDir: true }),
     postcss(),
     terser(),
-    /* styles() */
+    filesize(),
+    copy({
+      targets: [
+        {
+          src: "src/styles/global.module.css",
+          dest: "build",
+          rename: "global.css"
+        },
+        {
+          src: "src/styles/tokens.module.css",
+          dest: "build",
+          rename: "tokens.css"
+        }
+      ]
+    })  
   ]
 };
