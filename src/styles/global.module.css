@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,4 +7,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
   transition: background-color .125s ease-in-out;
-}
+} */
